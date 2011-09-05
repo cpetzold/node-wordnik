@@ -1,0 +1,9 @@
+{
+  "author": "Conner Petzold <cpetzold@gmail.com> (http://the0th.com)",
+  "name": "wordnik",
+  "description": "wordnik api wrapper for node.js",
+  "version": "0.0.1",
+  "engines": {
+    "node": "~v0.4.10"
+  }
+}
