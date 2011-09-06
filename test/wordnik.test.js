@@ -59,6 +59,42 @@ module.exports = {
     });
   },
   
+  'Wordnik#search': function() {
+    var wn = new Wordnik(options);
+    
+    wn.search('test', function(e, results) {
+      assert.isNull(e);
+      assert.isNotNull(results);
+    });
+  },
+  
+  'Wordnik#randomWord': function() {
+    var wn = new Wordnik(options);
+    
+    wn.randomWord(function(e, word) {
+      assert.isNull(e);
+      assert.isNotNull(word);
+    });
+  },
+  
+  'Wordnik#randomWords': function() {
+    var wn = new Wordnik(options);
+    
+    wn.randomWords(function(e, words) {
+      assert.isNull(e);
+      assert.isNotNull(words);
+    });
+  },
+  
+  'Wordnik#wordOfTheDay': function() {
+    var wn = new Wordnik(options);
+    
+    wn.wordOfTheDay(function(e, word) {
+      assert.isNull(e);
+      assert.isNotNull(word);
+    });
+  },
+  
   'Wordnik#examples': function() {
     var wn = new Wordnik(options);
     
