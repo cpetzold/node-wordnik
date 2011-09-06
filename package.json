@@ -4,7 +4,7 @@
   "description": "wordnik api wrapper for node.js",
   "version": "0.0.1",
   "engines": {
-    "node": "~v0.4.10"
+    "node": ">= v0.4.8 < v0.5.0"
   },
   "devDependencies": {
     "expresso": "0.8.x"
