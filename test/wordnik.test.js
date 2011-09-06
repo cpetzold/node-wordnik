@@ -14,6 +14,42 @@ module.exports = {
     }
   },
   
+  'Wordnik#authenticate': function() {
+    var wn = new Wordnik(options);
+    
+    wn.authenticate('username', 'password', function(e, user) {
+      assert.isNull(e);
+      assert.isNotNull(user);
+    });
+  },
+  
+  'Wordnik#user': function() {
+    var wn = new Wordnik(options);
+    
+    wn.user('userToken', function(e, user) {
+      assert.isNull(e);
+      assert.isNotNull(user);
+    });
+  },
+  
+  'Wordnik#wordLists': function() {
+    var wn = new Wordnik(options);
+    
+    wn.wordLists('userToken', function(e, lists) {
+      assert.isNull(e);
+      assert.isNotNull(lists);
+    });
+  },
+  
+  'Wordnik#apiTokenStatus': function() {
+    var wn = new Wordnik(options);
+    
+    wn.apiTokenStatus(function(e, status) {
+      assert.isNull(e);
+      assert.isNotNull(status);
+    });
+  },
+  
   'Wordnik#word': function() {
     var wn = new Wordnik(options);
     
