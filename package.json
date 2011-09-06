@@ -3,6 +3,10 @@
   "name": "wordnik",
   "description": "wordnik api wrapper for node.js",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cpetzold/node-wordnik.git"
+  },
   "engines": {
     "node": ">= v0.4.8 < v0.5.0"
   },
