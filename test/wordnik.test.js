@@ -131,10 +131,10 @@ module.exports = {
     });
   },
   
-  'Wordnik#related': function() {
+  'Wordnik#relatedWords': function() {
     var wn = new Wordnik(options);
     
-    wn.related('test', function(e, related) {
+    wn.relatedWords('test', function(e, related) {
       assert.isNull(e);
       assert.isNotNull(related);
     });
